@@ -52,6 +52,36 @@ html, body {
         blinking 1s step-end infinite;
 }
 
+#chain-container {
+	margin: 30px auto 0px;
+    width: 512px;
+}
+
+
+#blockchain {
+    -webkit-animation: chainmove 1.5s linear infinite;
+    animation: chainmove 1.5s linear infinite;
+}
+
+.block {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  float: left;
+  margin:5px;
+}
+
+.block:first-of-type {
+	-webkit-animation: fadeoutblock 1.5s infinite;
+	animation: fadeoutblock 1.5s infinite;
+}
+
+.block:last-of-type {
+  -webkit-animation: fadeblock 1.5s infinite;
+  animation: fadeblock 1.5s infinite;
+}
+
+
 @-webkit-keyframes typing {
 	from { width: 100% }
 	to {width: 0}
@@ -71,5 +101,38 @@ html, body {
     from, to { border-color: transparent; }
     50% { border-color: #fff; }
 }
+
+
+@-webkit-keyframes chainmove {
+  from {margin-left: 0px;}
+  to {margin-left: -65px;}
+}
+
+@keyframes chainmove {
+  from {margin-left: 0px;}
+  to {margin-left: -65px;}
+}
+
+@-webkit-keyframes fadeblock {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeblock {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+@-webkit-keyframes fadeoutblock {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+@keyframes fadeoutblock {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
 
 
