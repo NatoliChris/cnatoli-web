@@ -51,9 +51,9 @@ html, body {
 	background: #1d1f21;
 	box-sizing: border-box;
 	border-left: .5em solid;
-    -webkit-animation: typing 1.5s steps(19, end),
+    -webkit-animation: typing 3s steps(19, end),
         blinking 1s step-end infinite;
-    animation: typing 1.5s steps(19, end),
+    animation: typing 3s steps(19, end),
         blinking 1s step-end infinite;
 }
 
@@ -69,11 +69,12 @@ html, body {
 }
 
 .block {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #fff;
-  float: left;
-  margin:5px;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #fff;
+	float: left;
+	margin:5px;
+	color: #fff;
 }
 
 .block:first-of-type {
@@ -88,12 +89,14 @@ html, body {
 
 
 @-webkit-keyframes typing {
-	from { width: 100% }
+	from { width: 96% }
+	60% {width: 96%}
 	to {width: 0}
 }
 
 @keyframes typing {
-	from { width: 100% }
+	from { width: 96% }
+	60% {width: 96%}
 	to {width: 0}
 }
 
