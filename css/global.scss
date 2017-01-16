@@ -9,19 +9,48 @@ html, body {
 
 #main-title {
 	position: relative;
-	font-family: monospace;
+	font-family: 'Anonymous Pro', monospace;
 	text-decoration: none;
 	color: #000;
-	font-size: 1.5em;
-
+	font-size: 3em;
+	letter-spacing: 0.2em;
+	margin: auto;
+	display: inline-block;
+	text-align: center;
 }
 
-.cursor {
+.terminal-cursor {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 100%;
-	background: #000;
+	width: 0;
+	background: transparent;
 	box-sizing: border-box;
+	border-left: .5em solid;
+	background: #fff;
+    -webkit-animation: typing 1s steps(19, end),
+        blinking 1s step-end infinite;
+    animation: typing 1s steps(19, end),
+        blinking 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+	from { width: 100% }
+	to {width: 0}
+}
+
+@keyframes typing {
+	from { width: 100% }
+	to {width: 0}
+}
+
+@-webkit-keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+@keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
 }
