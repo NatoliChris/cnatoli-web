@@ -75,6 +75,8 @@ html, body {
 	float: left;
 	margin:5px;
 	color: #fff;
+	box-sizing: border-box;
+	padding-top: 12px;
 }
 
 .block:first-of-type {
@@ -113,12 +115,12 @@ html, body {
 
 @-webkit-keyframes chainmove {
   from {margin-left: 0px;}
-  to {margin-left: -65px;}
+  to {margin-left: -61px;}
 }
 
 @keyframes chainmove {
   from {margin-left: 0px;}
-  to {margin-left: -65px;}
+  to {margin-left: -61px;}
 }
 
 @-webkit-keyframes fadeblock {
