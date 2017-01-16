@@ -37,6 +37,11 @@ html, body {
 	text-align: center;
 }
 
+#main-title:before {
+    content: ">";
+    color: #666;
+}
+
 .terminal-cursor {
 	position: absolute;
 	top: 0;
