@@ -29,9 +29,9 @@ html, body {
 	box-sizing: border-box;
 	border-left: .5em solid;
 	background: #fff;
-    -webkit-animation: typing 1s steps(19, end),
+    -webkit-animation: typing 1.5s steps(19, end),
         blinking 1s step-end infinite;
-    animation: typing 1s steps(19, end),
+    animation: typing 1.5s steps(19, end),
         blinking 1s step-end infinite;
 }
 
