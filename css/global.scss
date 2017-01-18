@@ -139,10 +139,12 @@ html, body {
 #about {
 
 	img {
+
 		float: left;
 		display: block;
 		width: 28%;
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		margin: 3em 0 0 0;
+		opacity: 0.8px;
 	}
 
 	section {
@@ -156,12 +158,6 @@ html, body {
 			font-size: 1.3em;
 		}
 	}
-}
-
-#me-img {
-	margin: 3em 0 0 0;
-	border: 1px solid #1d1f21;
-	opacity: 0.8px;
 }
 
 /* 
