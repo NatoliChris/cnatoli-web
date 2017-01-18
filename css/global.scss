@@ -116,6 +116,7 @@ html, body {
 
 #body {
 	padding: 4em 0px;
+	color: #4d4d4c;
 }
 
 #body article {
@@ -135,17 +136,30 @@ html, body {
 	----------
 */
 
+#about {
 
-#about img {
-	float: left;
-}
+	img {
+		float: left;
+		display: block;
+		width: 28%;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
 
-#about section {
-	float: right;
+	section {
+		float: right;
+		width: 70%;
+		display: block;
+		box-sizing: border-box;
+		padding: 3em 2em;
+		
+		p {
+			font-size: 1.3em;
+		}
+	}
 }
 
 #me-img {
-	margin: 4em 0 0 0;
+	margin: 3em 0 0 0;
 	border: 1px solid #1d1f21;
 	opacity: 0.8px;
 }

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+	// Blockchain counting
 	var count = 0;
 	setInterval(function(){
 		var a = $('.block');
