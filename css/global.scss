@@ -117,17 +117,20 @@ html, body {
 #body {
 	padding: 4em 0px;
 	color: #4d4d4c;
+
+	article {
+		width: 60%;
+		display: block;
+		margin: auto;
+		padding: 40px 0px;
+		margin: 20px auto 60px auto;
+	}
 }
 
-#body article {
-	width: 60%;
-	display: block;
-	margin: auto;
-}
-
-#body article header {
-	font-size: 3em;
-	font-weight: light;
+article header {
+	font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
 }
 
 /*
@@ -148,16 +151,26 @@ html, body {
 	}
 
 	section {
+
 		float: right;
 		width: 70%;
 		display: block;
 		box-sizing: border-box;
 		padding: 3em 2em;
-		
+
 		p {
-			font-size: 1.3em;
+			font-size: 1.4em;
+			font-weight: 300;
+			text-align: left;
 		}
 	}
+
+	header {
+		text-align: left;
+		font-size: 4em;
+		font-weight: 300;
+	}
+
 }
 
 /* 
